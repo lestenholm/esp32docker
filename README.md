@@ -16,7 +16,7 @@ $ minicom -s ## Configure to use /dev/ttyUSB0 @ 115200 + no hw flow control
 
 When you have ensured that your build installed you can test pppd by running pppd.
 
-    sudo pppd file pppd-options 192.168.68.1:192.168.68.123 ### Last arg is local-IP:remote-IP
+    sudo pppd file pppd-options 192.168.68.100:192.168.68.123 ### Last arg is local-IP:remote-IP
 
 
 
