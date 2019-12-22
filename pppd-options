@@ -1,0 +1,11 @@
+/dev/ttyUSB0
+115200
+noipdefault
+usepeerdns
+defaultroute
+persist
+noauth
+nodetach
+debug
+kdebug 7
+connect "/usr/sbin/chat -v -f ./esp32-ppp.chat"
