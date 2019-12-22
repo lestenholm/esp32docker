@@ -1,7 +1,11 @@
 # ESP32 AT + PPPD flasher
 
 $ docker build -t esp32ppp:latest .
-$ docker run --device=/device/ttyUSB0 esp32ppp:latest
+
+
+$ docker run --device=/dev/ttyUSB0 esp32ppp:latest
+
+
 $ minicom ## Configure to use /dev/ttyUSB01 @ 115200 w/ no hw flow control 
 
 AT+GMR
