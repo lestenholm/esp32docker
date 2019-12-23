@@ -9,7 +9,7 @@ These instructions are based on setting up the pppd fork of esp32-at: https://gi
 
 ## Setup ESP32
 
-$ minicom -s ## Configure to use /dev/ttyUSB0 @ 115200 + no hw flow control 
+    minicom -s ## Configure to use /dev/ttyUSB0 @ 115200 + no hw flow control 
 
 ### Check installed firmware 
 
