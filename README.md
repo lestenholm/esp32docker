@@ -1,5 +1,7 @@
 # ESP32 AT + PPPD flasher
 
+These instructions are based on setting up the pppd fork of esp32-at: https://github.com/ep00ch/esp32-at-ppp
+
 ## Build docker image and load firmware
 
 $ docker build -t esp32ppp:latest .
