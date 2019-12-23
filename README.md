@@ -4,11 +4,8 @@ These instructions are based on setting up the pppd fork of esp32-at: https://gi
 
 ## Build docker image and load firmware
 
-$ docker build -t esp32ppp:latest .
-
-
-$ docker run --device=/dev/ttyUSB0 esp32ppp:latest
-
+    docker build -t esp32ppp:latest .
+    docker run --device=/dev/ttyUSB0 esp32ppp:latest
 
 ## Setup ESP32
 
