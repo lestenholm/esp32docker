@@ -12,7 +12,8 @@ ENV  IDF_PATH=/esp32-at-ppp/esp-idf/
 RUN  /usr/bin/python -m pip install --user -r $IDF_PATH/requirements.txt
 RUN  /usr/bin/python -m pip install pyyaml xlrd
 COPY sdkconfig /esp32-at-ppp/
+RUN  touch /esp32-at-ppp/sdkconfig
 RUN  cd /esp32-at-ppp/ && yes | make patch
-RUN  cd /esp32-at-ppp/ && make app
+RUN  cd /esp32-at-ppp/ && yes | make app
 
 CMD cd /esp32-at-ppp && make flash
