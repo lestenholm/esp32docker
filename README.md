@@ -20,20 +20,25 @@ These instructions are based on setting up the pppd fork of esp32-at: https://gi
 
 ### Set to SoftAP mode
 
-    AT+CWMODE=3
+    AT+CWMODE=2
 
 ### List WiFi networks and APs
 
     AT+CWLAP
-	+CWLAP:(3,"My WiFe",-83,"cc:b0:ce:87:9a:ed",1)
+    +CWLAP:(3,"My WiFe",-83,"cc:b0:ce:87:9a:ed",1)
     +CWLAP:(4,"dlink",-85,"14:a6:4d:e5:30:16",11)
     +CWLAP:(3,"Toshiba-U2187-OfficeLink-Net46UHZ",-86,"aa:bb:cc:13:77:11",1)
 
 ### Connect to an AP
 
     AT+CWJAP="dlink","kensentme"
-	WIFI CONNECTED
-	WIFI GOT IP
+    ... reset messages and debug stuff ...
+    WIFI CONNECTED
+    WIFI GOT IP
+
+### Show IP
+
+    AT+CIFSR
 
 ### Start PPPD
 
