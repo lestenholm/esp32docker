@@ -18,6 +18,10 @@ These instructions are based on setting up the pppd fork of esp32-at: https://gi
     SDK version:v3.2-dev-1250-g221eced06
     compile time:Dec 22 2019 22:13:29
 
+### Set to SoftAP mode
+
+    AT+CWMODE=3
+
 ### List WiFi networks and APs
 
     AT+CWLAP
